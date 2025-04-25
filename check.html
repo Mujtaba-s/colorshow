@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        #videoContainer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        video {
+            width: 600px; /* Set the width of the video */
+            height: auto; /* Maintain aspect ratio */
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="videoContainer">
+    <video id="myVideo" src="Elon Musk - Hall of Fame.mp4" controls>
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+</div>
+
+<script>
+    const video = document.getElementById('myVideo');
+    const start = document.getElementById('startButton');
+    const stop = document.getElementById('stopButton');
+
+    startButton.addEventListener('click', () => {
+        video.play();
+    });
+
+    stopButton.addEventListener('click', () => {
+        video.pause();
+     // Reset video to the start
+    });
+</script>
+
+</body>
+</html>
